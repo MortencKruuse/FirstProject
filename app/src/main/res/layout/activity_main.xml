@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <!--android:paddingLeft="16dp"
+        android:paddingRight="16dp">-->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="108dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:text="Click buttons"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/hello_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Hello" />
+
+        <Button
+            android:id="@+id/goodbye_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Bye" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="hejsa"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <WebView
+            android:id="@+id/webber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/weburl"
+        android:layout_width="219dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Web Url" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="94dp"
+        android:layout_height="66dp"
+        android:text="Ok"
+        app:layout_constraintTop_toBottomOf="@+id/weburl"
+        tools:layout_editor_absoluteX="118dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
